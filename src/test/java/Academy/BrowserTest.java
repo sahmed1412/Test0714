@@ -27,7 +27,8 @@ public class BrowserTest {
 			 driver.manage().window().maximize();
 			 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			 driver.manage().timeouts().implicitlyWait(30, TimeUnit.MICROSECONDS);
-			 driver.get("https://tarishahone.azurewebsites.net/webapp/");
+			// driver.get("https://tarishahone.azurewebsites.net/webapp/");
+				driver.get("https://shahgee2022.azurewebsites.net/webapp/");
 			String text= driver.findElement(By.cssSelector("h1")).getText();
 			System.out.println(text);
 			Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
